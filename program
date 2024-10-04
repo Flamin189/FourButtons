@@ -1,0 +1,30 @@
+<html>
+<head></head>
+<body>
+    <script>
+        const button1 = document.createElement('button');
+        button1.innerText = 'Red';
+        button1.style.backgroundColor="red";
+        
+        const button2 = document.createElement('button');//.style.setcolor='yellow';
+        button2.innerText = 'Yellow';
+        button2.style.backgroundColor="yellow";
+        
+        const button3 = document.createElement('button');
+        button3.innerText = 'Blue';
+        button3.style.backgroundColor="blue";
+        
+        const defau = document.createElement('button');
+        defau.innerText = 'default';
+        button1.addEventListener('click', () => {document.body.style.backgroundColor = "red";});
+        button2.addEventListener('click', () => {document.body.style.backgroundColor = "yellow";});
+        button3.addEventListener('click', () => {document.body.style.backgroundColor = "blue";});
+        defau.addEventListener('click', () => {document.body.style.backgroundColor = "white";});
+
+        document.body.append(button1);
+        document.body.append(button2);
+        document.body.append(button3);
+        document.body.append(defau);
+    </script>
+</body>
+</html>
